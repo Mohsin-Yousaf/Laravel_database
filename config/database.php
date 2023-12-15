@@ -37,11 +37,11 @@ return [
 
     'postgres' => [
         'driver' => 'pgsql',
-        'host' => env('DB_POSTGRES_HOST', '172.17.0.4'),
+        'host' => env('DB_POSTGRES_HOST', 'postgres_host'),
         'port' => env('DB_POSTGRES_PORT', '5432'),
         'database' => env('DB_POSTGRES_DATABASE', 'postgres'),
-        'username' => env('DB_POSTGRES_USERNAME', 'db_user'),
-        'password' => env('DB_POSTGRES_PASSWORD', 'db_password'),
+        'username' => env('DB_POSTGRES_USERNAME', 'postgres_user'),
+        'password' => env('DB_POSTGRES_PASSWORD', 'postgres_password'),
         'charset' => 'utf8',
         'prefix' => '',
         'schema' => 'public',

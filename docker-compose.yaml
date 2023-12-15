@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    image: my-php-app
+    ports:
+      - "8050:80"
+
+  postgres_db:
+    image: postgres:15
+    environment:
+      POSTGRES_USER: postgres_user
+      POSTGRES_PASSWORD: postgres123
+
+
+  redis_db:
+    image: redis
